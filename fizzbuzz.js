@@ -1,4 +1,13 @@
-function runFizzBuzz() {
+document.addEventListener('DOMContentLoaded', function () {
+    const startButton = document.getElementById('startButton');
+    const outputDiv = document.getElementById('output');
+
+    startButton.addEventListener('click', function () {
+        runFizzBuzz(outputDiv);
+    });
+});
+
+function runFizzBuzz(outputDiv) {
     let output = "";
     for (let i = 1; i <= 100; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
@@ -11,5 +20,5 @@ function runFizzBuzz() {
             output += i + "<br>";
         }
     }
-    document.getElementById("output").innerHTML = output;
+    outputDiv.innerHTML = output;
 }
