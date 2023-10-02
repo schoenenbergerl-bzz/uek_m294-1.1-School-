@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {document.getElementById('greetButton');
+alert('F OFF')
+document.addEventListener('DOMContentLoaded', function () {const greetButton = document.getElementById('greetButton');
 
-    document.getElementById('greetButton').addEventListener('click', function () {
-        alert('Hallo Welt');
+    greetButton.addEventListener('click', function () {
+        alert('Hello World');
     });
 });
