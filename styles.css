@@ -52,16 +52,68 @@ header nav a {
     object-fit: cover;
 }
 
-.bold-before-by {
+.songnames {
     list-style-type: decimal;
 }
 
-.bold-text {
-    font-weight: bold;
-    margin-left: 5px;
-}
+
 
 footer {
     text-align: center;
     margin-top: auto;
+}
+
+.image:hover {
+    transform: scale(1.2); /* Enlarge the image on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.spin-animation {
+    animation: spin 1s linear infinite; /* Adjust the duration as needed */
+}
+
+.red-text {
+    color: red;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.bottomBar {
+    background-color: aqua;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.accordion {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
 }
